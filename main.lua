@@ -1,13 +1,20 @@
---- comando para uso de emoji em windows
-os.execute("chcp 65001")
---- limpar tela windows / clear em linux
-os.execute("cls")
 
+
+-- dependências
 local designs = require("designs")
-local menu = require("menu")
+local menu = require("menus.menu")
+local combat = require("combat")
 
+
+designs.enableUtf8()
+designs.clean()
+
+local boss = "creature"
+
+
+-- inicialização do programa
 repeat
-  os.execute("cls")
+  designs.clean()
 
   designs.start()
   local m = io.read()
@@ -19,5 +26,7 @@ repeat
   menu(m)
 
 until false
+
+designs.clean()
 
 

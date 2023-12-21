@@ -1,10 +1,15 @@
 local druid = {}
 
-druid.name = "Druida"
+druid.name = "DRUIDA"
 
 function druid.description()
     print([[
-       
+         ____________________________________________________________________________________________
+
+        | Invocando forças elementais ou emulando criaturas do mundo animal, os druidas são a 
+        | personificação da resiliência, astúcia e fúria da natureza. Eles afirmam não ter domínio 
+        | sobre a natureza. Em vez disso, eles são vistos como uma extensão da vontade indomável dele.
+ 
     ]])
 end
 

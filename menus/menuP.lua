@@ -2,15 +2,15 @@ local designsP = require("player.characters.designsP")
 
 local menuP = {
     ["1"]= function ()
-        print("Redireciona ao Bárbaro")
+      designsP.barbarian()
       local n = io.read("*l")
     end,
     ["2"] = function ()
-      print("Redireciona ao Druida")
+      designsP.druid()
       local n = io.read("*l")
     end,
     ["3"] = function ()
-      print("Redireciona ao Bruxa")
+      designsP.warlock()
       local n = io.read("*l")
   end,
     default = function ()

@@ -1,9 +1,15 @@
 local barbarian = {}
 
-barbarian.name = "Bárbaro"
+barbarian.name = "BÁRBARO"
 
 function barbarian.description()
     print([[
+         ____________________________________________________________________________________________
+
+        | Para alguns, sua raiva brota da comunhão com espíritos de animais selvagens. Outros 
+        | recorrem ao seu reservatório fervilhante de raiva. Para os bárbaros, a fúria é um poder 
+        | que lhes proporciona não apenas frenesi cego em batalha, mas também reflexos 
+        | extraordinários, resistência e feitos de força.
        
     ]])
 end

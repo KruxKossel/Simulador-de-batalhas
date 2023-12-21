@@ -25,15 +25,15 @@ print([[
       |  Y  |
       |  |  |
       |  |  |                                   
-     _|  |  |                                                         PLAY
-  __/ |  |  |\                                                     PERSONAGENS
- /  \ |  |  |  \                                                    CRIATURAS
+     _|  |  |                                                         1 - PLAY
+  __/ |  |  |\                                                       2 - CLASSES
+ /  \ |  |  |  \                                                    3 - CRIATURAS
     __|  |  |   |
  /\/  |  |  |   |\
   <   +\ |  |\ />  \
    >   + \  | \\    |
          + \|+  \  < \
-   (O)      +    |    )           ENCERRAR JOGO
+   (O)      +    |    )           $ - ENCERRAR JOGO
     |             \  /\ 
   ( | )   (o)      \/  )_____________________________________________________________________________________________________________
  _\\|//__( | )______)_/__________________________________________________________________________________________________________________
@@ -58,17 +58,18 @@ function designs.menuPp(menu)
  \ /` \\  _.-`:::`-._  //
   `    \|`    :::    `|/
         |     :::     |
-        |.....:::.....|                       Bárbaro
-        |:::::::::::::|                       Druida
-        |     :::     |                       Bruxo             
+        |.....:::.....|                       1 - Bárbaro
+        |:::::::::::::|                       2 - Druida
+        |     :::     |                       3 - Feiticeiro            
         \     :::     /
-         \    :::    /
+         \    :::    /                        $ - Voltar
           `-. ::: .-'
            //`:::`\\
           //   '   \\
          //         \\       
          
-         Escolha uma Classe:
+
+                           Escolha uma Classe:
    ]])
 
    --- recebe enter como entrada
@@ -86,21 +87,55 @@ function designs.menuCc(menu)
            `:.`---.__         `-._                      
               `:.     `--.         `.                 
                 \.        `.         `.                
-        (,,(,    \.         `.   ____,-`.,             Espectro 
-     (,'     `/   \.   ,--.___`.'                      Gárgula       
- ,  ,'  ,--.  `,   \.;'         `                      Harpia      
-  `{D, {    \  :    \;                                 Osgo       
+        (,,(,    \.         `.   ____,-`.,             1 - Espectro 
+     (,'     `/   \.   ,--.___`.'                      2 - Gárgula       
+ ,  ,'  ,--.  `,   \.;'         `                      3 - Harpia      
+  `{D, {    \  :    \;                                 4 - Osgo       
     \,,'    /  /    //                                    
-    |;;    /  ,' ,-//.    ,---.      ,                    
+    |;;    /  ,' ,-//.    ,---.      ,                 $ - Voltar  
     \;'   /  ,' /  _  \  /  _  \   ,'/                    
           \   `'  / \  `'  / \  `.' /                     
            `.___,'   `.__,'   `.__,' 
 
    
-           Escolha uma criatura:
+                                      Escolha uma criatura:
    ]])
 
    --local n = io.read("*l")
+end
+
+--- Função que retorna lvl de ameaça ao receber atributo
+function designs.getThreatBar(attribute)
+
+   local fullChar = "❗"
+   local emptyChar = "❕"
+ 
+   local result = ""
+ 
+   for i = 0, 1, 0.25 do
+     if i < attribute then
+       result = result .. fullChar
+     else
+       result = result .. emptyChar
+     end
+   end
+   return result
+end
+
+--- Função para retornar barra de progresso ao receber atributo
+function designs.getProgressBar(attribute)
+   local fullChar = "🔳"
+   local emptyChar = "⬜"
+ 
+   local result = ""
+   for i = 1, 20, 1 do
+     if i <= attribute then
+       result = result .. fullChar
+     else
+       result = result .. emptyChar
+     end
+   end
+   return result
 end
 
 return designs

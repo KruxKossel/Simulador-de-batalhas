@@ -2,19 +2,19 @@ local designsC = require("creatures.designsC")
 
 local menuC = {
     ["1"]= function ()
-        print("Redireciona ao Espectro")
+      designsC.espectro()
       local n = io.read("*l")
     end,
     ["2"] = function ()
-      print("Redireciona ao Gárgula")
+      designsC.gargula()
       local n = io.read("*l")
     end,
     ["3"] = function ()
-      print("Redireciona ao Hapia")
+      designsC.harpia()
       local n = io.read("*l")
   end,
     ["4"] = function ()
-      print("Redireciona ao Osgo")
+      designsC.osgo()
       local n = io.read("*l")
   end,
     default = function ()

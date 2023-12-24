@@ -5,7 +5,7 @@ warlock.name = "FEITICEIRO"
 function warlock.description()
     print([[
          ____________________________________________________________________________________________
-
+        |
         | Os feiticeiros são buscadores do conhecimento que está escondido no multiverso. Através 
         | de pactos feitos com seres poderosos de poder sobrenatural, os feiticeiros desencadeiam 
         | efeitos mágicos sutis e espetaculares e coletam segredos arcanos para aumentar seu 

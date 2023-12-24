@@ -20,9 +20,13 @@ function designsC.espectro()
 
     print("               Vida:         " .. designs.getProgressBar(espectro.hitPointsMax).." " .. espectro.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(espectro.attack))
-    print("               Defesa:       " .. designs.getProgressBar(espectro.armorClassMax))
-    print("               Iniciativa:   " .. designs.getProgressBar(espectro.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(espectro.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(espectro.armorClassMax).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(espectro.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(espectro.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end
@@ -40,9 +44,13 @@ function designsC.gargula()
 
     print("               Vida:         " .. designs.getProgressBar(gargula.hitPointsMax).." " .. gargula.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(gargula.attack))
-    print("               Defesa:       " .. designs.getProgressBar(gargula.armorClassMax))
-    print("               Iniciativa:   " .. designs.getProgressBar(gargula.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(gargula.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(gargula.armorClassMax).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(gargula.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(gargula.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end
@@ -60,9 +68,13 @@ function designsC.harpia()
 
     print("               Vida:         " .. designs.getProgressBar(harpia.hitPointsMax).." " .. harpia.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(harpia.attack))
-    print("               Defesa:       " .. designs.getProgressBar(harpia.armorClassMax))
-    print("               Iniciativa:   " .. designs.getProgressBar(harpia.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(harpia.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(harpia.armorClassMax).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(harpia.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(harpia.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end
@@ -80,9 +92,13 @@ function designsC.osgo()
 
     print("               Vida:         " .. designs.getProgressBar(osgo.hitPointsMax).." " .. osgo.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(osgo.attack))
-    print("               Defesa:       " .. designs.getProgressBar(osgo.armorClassMax))
-    print("               Iniciativa:   " .. designs.getProgressBar(osgo.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(osgo.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(osgo.armorClassMax).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(osgo.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(osgo.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end

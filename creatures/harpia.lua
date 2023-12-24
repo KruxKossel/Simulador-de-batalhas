@@ -5,7 +5,7 @@ harpia.name = "HARPIA"
 function harpia.description()
     print([[
          ____________________________________________________________________________________________
-        
+        |
         | Harpias são monstruosidades que misturam os atributos de uma mulher com os de um
         | pássaro carniça. Eles são capazes de voar com suas asas emplumadas e cantar tão
         | sublimemente que atraem todos os que os ouvem como cordeiros para a matança. Harpias

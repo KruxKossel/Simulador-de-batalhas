@@ -5,7 +5,7 @@ osgo.name = "OSGO"
 function osgo.description()
     print([[
          ____________________________________________________________________________________________
-        
+        |
         | Um grande duende que escraviza seus primos mais novos em virtude de seu poderio físico.
         | O osgo é facilmente reconhecível por seu focinho e orelhas de urso, bem como seus hábitos
         | antropófagos.

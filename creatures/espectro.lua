@@ -5,7 +5,7 @@ espectro.name = "ESPECTRO"
 function espectro.description()
     print([[
          ____________________________________________________________________________________________
-        
+        |
         | A figura de um humanoide furioso flutua no campo, drenando a vida das flores e vermes
         | que se aproximam dele em seu rastro. Mais do que piedade e compaixão, esta aparição
         | provoca repulsa pelo mal óbvio que exala.

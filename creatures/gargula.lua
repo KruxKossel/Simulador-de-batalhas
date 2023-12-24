@@ -5,7 +5,7 @@ gargula.name = "GÁRGULA"
 function gargula.description()
     print([[
          ____________________________________________________________________________________________
-        
+        |
         | Aberrações rochosas aladas, famosas tanto por sua aparência monstruosa quanto por sua
         | maldade. É comum encontrá-los a serviço das forças do mal, pois graças ao seu mimetismo
         | natural e garras brutais são grandes guardiões.

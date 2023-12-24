@@ -18,9 +18,13 @@ function designsP.barbarian()
 
     print("\n\n               Vida:         " .. designs.getProgressBar(barbarian.hitPointsMax).." " .. barbarian.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(barbarian.attack))
-    print("               Defesa:       " .. designs.getProgressBar(barbarian.armorClass))
-    print("               Iniciativa:   " .. designs.getProgressBar(barbarian.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(barbarian.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(barbarian.armorClass).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(barbarian.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(barbarian.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end
@@ -36,9 +40,13 @@ function designsP.druid()
 
     print("\n\n               Vida:         " .. designs.getProgressBar(druid.hitPointsMax).." " .. druid.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(druid.attack))
-    print("               Defesa:       " .. designs.getProgressBar(druid.armorClass))
-    print("               Iniciativa:   " .. designs.getProgressBar(druid.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(druid.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(druid.armorClass).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(druid.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(druid.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end
@@ -54,9 +62,13 @@ function designsP.warlock()
 
     print("\n\n               Vida:         " .. designs.getProgressBar(warlock.hitPointsMax).." " .. warlock.hitPointsMax)
     print("               Ataque:       " .. designs.getProgressBar(warlock.attack))
-    print("               Defesa:       " .. designs.getProgressBar(warlock.armorClass))
-    print("               Iniciativa:   " .. designs.getProgressBar(warlock.initiative))
-    print("               Hit/DC:       " .. designs.getProgressBar(warlock.hitDc))
+    print("               Defesa:       " .. designs.getProgressBar(warlock.armorClass).."                               |")
+    print("               Iniciativa:   " .. designs.getProgressBar(warlock.initiative).."                               |")
+    print("               Hit/DC:       " .. designs.getProgressBar(warlock.hitDc).."                               |")
+
+    print([[
+        ____________________________________________________________________________________________|
+    ]])
 
     print("\n\nTecle ENTER para continuar:")
 end

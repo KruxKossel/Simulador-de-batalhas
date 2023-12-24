@@ -10,7 +10,6 @@ function designs.clean ()
    os.execute("cls")
 end
 
-
 --- Desenho tela de inicío
 function designs.start()
 print([[
@@ -46,8 +45,24 @@ print([[
 
 end
 
+function designs.play()
+
+  print([[
+
+  Com qual classe deseja jogar?
+
+  1 - Bárbaro
+  2 - Druida
+  3 - Feiticeiro 
+
+  $ - Voltar
+  
+  ]])
+  
+end
+
 --- Desenho do menu de seleção de personagens (personagens listados)
-function designs.menuPp(menu)
+function designs.menuPp()
    designs.clean()
 
    print([[
@@ -77,7 +92,7 @@ function designs.menuPp(menu)
 end
 
 --- Desenho do menu de seleção de criaturas (criaturas  listadas)
-function designs.menuCc(menu)
+function designs.menuCc()
    designs.clean()
 
    print([[

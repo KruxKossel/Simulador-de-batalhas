@@ -4,7 +4,7 @@
 local designs = require("designs")
 local menu = require("menus.menu")
 local combat = require("combat")
-
+local attribute = require("player.player")
 
 designs.enableUtf8()
 designs.clean()

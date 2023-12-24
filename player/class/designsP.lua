@@ -1,7 +1,7 @@
 local designs = require("designs")
-local barbarian = require("player.characters.barbarian")
-local druid = require("player.characters.druid")
-local warlock = require("player.characters.warlock")
+local barbarian = require("player.class.barbarian")
+local druid = require("player.class.druid")
+local warlock = require("player.class.warlock")
 
 --- 
 local designsP = {}

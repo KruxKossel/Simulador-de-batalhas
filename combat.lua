@@ -1,6 +1,12 @@
+local attribute = require("player.player")
+
 local combat = {}
 
 function combat.play(boss, player)
+
+    local successChance = player.hitDc >= boss.armorClass
+    local success = math.random() <= successChance
+
     repeat
         -- ações jogador
 

@@ -1,4 +1,4 @@
-local designsP = require("player.characters.designsP")
+local designsP = require("player.class.designsP")
 
 local menuP = {
     ["1"]= function ()

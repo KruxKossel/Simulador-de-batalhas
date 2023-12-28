@@ -10,6 +10,11 @@ function designs.clean ()
    os.execute("cls")
 end
 
+--- comando para entrada de enter
+function designs.enter()
+  local n = io.read("*l")
+end
+
 --- Desenho tela de inicío
 function designs.start()
 print([[
@@ -48,14 +53,15 @@ end
 function designs.play()
 
   print([[
-
-  Com qual classe deseja jogar?
-
-  1 - Bárbaro
-  2 - Druida
-  3 - Feiticeiro 
-
-  $ - Voltar
+                      Com qual classe deseja jogar?
+  ____       ____
+  /    )     (    \ 
+ /    (  ^_^  )    \         1 - Bárbaro
+|  {   \('v')/   }  |        2 - Druida
+|   {   /   \   }   |        3 - Feiticeiro 
+|_)(   /\   /\   )(_|
+|)  (_ | \|/  |_)  (|
+'     "--^^^^--"    '        $ - Voltar
   
   ]])
   

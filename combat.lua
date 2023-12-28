@@ -1,27 +1,31 @@
-local attribute = require("player.player")
+local designs = require("designs")
+local player = require("player.player")
+local boss = require("creatures.boss")
 
 local combat = {}
 
-function combat.play(boss, player)
+function combat.play()
 
-    local successChance = player.hitDc >= boss.armorClass
-    local success = math.random() <= successChance
+    designs.clean()
 
-    repeat
-        -- ações jogador
+    boss.choice =  boss.ramdom()
+    for key, valor in pairs(boss.choice) do
+        boss.attribute[key] = valor
+    end
 
-        -- simular o turno do jogador
+    --boss.attribute(boss.choice)
 
-        if boss.health <= 0 then
-            break
-        end
+    print(boss.attribute.name)
+    print(player.attribute.name.."\n\n")
 
-        -- simular turno da criatura
+    print("boss life: ", boss.attribute.hitPoints)
+    print("player life: ", player.attribute.hitPoints)
 
-        if player.health <= 0 then
-            break
-        end
-    until false
+
+    designs.enter()
+
+    -- retirada do repeat de combate
+
 end
 
 return combat

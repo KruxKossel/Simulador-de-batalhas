@@ -2,15 +2,15 @@ local designs = require("designs")
 local menuC = require("menus.menuC")
 local menuP = require("menus.menuP")
 local player = require("player.player")
-local barbarian = require("player.class.barbarian")
-local druid = require("player.class.druid")
-local warlock = require("player.class.warlock")
+local combat = require("combat")
+
 
 --- menu de seleção da primeira tela
 local menu = {
     ["1"]= function ()
         print("Redireciona ao combate")
-      local n = io.read("*l")
+        designs.enter()
+        designs.clean()
 
       repeat
 
@@ -21,7 +21,22 @@ local menu = {
           break
         end
         
-        player.attribute(player.class(m))
+        if m == "1" or m == "2" or m == "3" then
+          player.choice = player.class(m)
+
+          for key, valor in pairs(player.choice) do
+            player.attribute[key] = valor
+        end
+
+          combat.play()
+          
+        else
+          print("Opção inválida!")
+          designs.enter()
+          designs.clean()
+        end
+
+
       until false
     end,
     ["2"] = function ()

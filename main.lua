@@ -9,8 +9,6 @@ local attribute = require("player.player")
 designs.enableUtf8()
 designs.clean()
 
-local boss = "creature"
-
 
 -- inicialização do programa
 repeat

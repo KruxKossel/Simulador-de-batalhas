@@ -22,6 +22,10 @@ function player.class(class)
     end  
 end
 
+function player.bag()
+
+end
+
 --- tabela que recebe o valor de uma das classes
 player.attribute = {}
 

@@ -25,6 +25,8 @@ druid.attack = 3 -- 1d6 + 1d8
 druid.hitDc = 2  -- 1d20 + 2
 druid.hitDcBonus = 5  -- 1d20 + 5
 
+druid.potions = 3
+
 
 
 return druid

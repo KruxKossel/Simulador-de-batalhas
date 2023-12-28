@@ -25,4 +25,6 @@ warlock.attack = 4 -- 1d10 + 3
 --- Chance de acerto
 warlock.hitDc = 5  -- 1d20 + 5
 
+warlock.potions = 4
+
 return warlock

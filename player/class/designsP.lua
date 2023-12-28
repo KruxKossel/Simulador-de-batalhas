@@ -27,6 +27,7 @@ function designsP.barbarian()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 function designsP.druid()
@@ -49,6 +50,7 @@ function designsP.druid()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 function designsP.warlock()
@@ -71,6 +73,7 @@ function designsP.warlock()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 return designsP

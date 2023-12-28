@@ -2,21 +2,21 @@ local designs = require("designs")
 local menuC = require("menus.menuC")
 local menuP = require("menus.menuP")
 local player = require("player.player")
-local combat = require("combat")
+local combat = require("play.combat")
 
 
 --- menu de seleção da primeira tela
 local menu = {
     ["1"]= function ()
-        print("Redireciona ao combate")
-        designs.enter()
-        designs.clean()
 
       repeat
 
-        designs.play()
-        local m = io.read()
+        designs.clean()
 
+        designs.play()
+        io.write("> ")
+        local m = io.read()
+        
         if m == "$" then
           break
         end
@@ -43,6 +43,7 @@ local menu = {
       repeat
 
         designs.menuPp()
+        io.write("\n> ")
         local m = io.read()
 
         if m == "$" then
@@ -56,6 +57,7 @@ local menu = {
       repeat
         
         designs.menuCc()
+        io.write("\n> ")
         local m = io.read()
 
         if m == "$" then

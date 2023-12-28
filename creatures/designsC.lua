@@ -29,6 +29,7 @@ function designsC.espectro()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 function designsC.gargula()
@@ -53,6 +54,7 @@ function designsC.gargula()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 function designsC.harpia()
@@ -77,6 +79,7 @@ function designsC.harpia()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 function designsC.osgo()
@@ -101,6 +104,7 @@ function designsC.osgo()
     ]])
 
     print("\n\nTecle ENTER para continuar:")
+    io.write("> ")
 end
 
 

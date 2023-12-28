@@ -25,5 +25,7 @@ barbarian.attack = 4 -- 1d12 + 3
 --- Chance de acerto
 barbarian.hitDc = 5  -- 1d20 + 5
 
+barbarian.potions = 2
+
 
 return barbarian

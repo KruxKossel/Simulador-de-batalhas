@@ -15,6 +15,14 @@ function designs.enter()
   local n = io.read("*l")
 end
 
+---Pergunta ao usuário por um número, que é retornado pela função.
+---@return any
+function designs.ask()
+  io.write("> ")
+  local answer = io.read("*n")
+  return answer
+end
+
 --- Desenho tela de inicío
 function designs.start()
 print([[
@@ -125,6 +133,16 @@ function designs.menuCc()
    --local n = io.read("*l")
 end
 
+function designs.sword()
+  print([[
+    
+          O                                     O
+    {o)xxx|===============-  *  -===============|xxx(o}
+          O                                     O
+  
+  ]])
+end
+
 --- Função que retorna lvl de ameaça ao receber atributo
 function designs.getThreatBar(attribute)
 
@@ -157,6 +175,21 @@ function designs.getProgressBar(attribute)
      end
    end
    return result
+end
+
+function designs.getCombatBar(attribute)
+  local fullChar = " ❤️"
+  local emptyChar = "🖤"
+
+  local result = ""
+  for i = 1, 10, 1 do
+    if i <= attribute then
+      result = result .. fullChar
+    else
+      result = result .. emptyChar
+    end
+  end
+  return result
 end
 
 return designs

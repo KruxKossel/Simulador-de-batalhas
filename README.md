@@ -8,7 +8,7 @@ Neste jogo, os jogadores têm a oportunidade de escolher entre diferentes classe
 
 ## Tecnologias Utilizadas
 
-- ![Lua](https://img.shields.io/badge/lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
+![Lua](https://img.shields.io/badge/lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
 
 ## Como Jogar
 
@@ -22,4 +22,4 @@ git clone https://github.com/KruxKossel/Simulador-de-batalhas.git
 cd Simulador-de-batalhas
 
 # Execute o jogo utilizando um interpretador Lua
-lua jogo.lua
+lua main.lua
